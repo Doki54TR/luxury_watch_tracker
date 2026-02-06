@@ -101,7 +101,7 @@ def start_scraping():
         driver = uc.Chrome(options=options)
     else:
         print("🪟 Running in Windows Mode...")
-        driver = uc.Chrome(options=options, use_subprocess=True)
+        driver = uc.Chrome(options=options, version_main=144)
 
     wait = WebDriverWait(driver, 15)
     

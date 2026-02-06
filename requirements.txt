@@ -1,0 +1,9 @@
+psycopg2-binary
+selenium
+undetected-chromedriver
+schedule
+streamlit
+pandas
+requests
+yfinance
+pyvirtualdisplay

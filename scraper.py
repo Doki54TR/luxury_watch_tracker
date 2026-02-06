@@ -20,10 +20,10 @@ if os.name == 'posix':
 db_host = os.getenv("DB_HOST", "localhost")
 
 DB_PARAMS = {
-    "host": db_host,
-    "database": "postgres",
-    "user": "postgres",
-    "password": "1234",
+    "host": "db",           # "localhost" yerine doğrudan Docker servis adını yazıyoruz
+    "database": "postgres", # docker-compose'daki POSTGRES_DB ile aynı
+    "user": "postgres",     # docker-compose'daki POSTGRES_USER ile aynı
+    "password": "1234",     # docker-compose'daki POSTGRES_PASSWORD ile aynı
     "port": "5432"
 }
 
